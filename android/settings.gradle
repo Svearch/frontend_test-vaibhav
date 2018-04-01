@@ -1,0 +1,3 @@
+rootProject.name = 'svearch'
+
+include ':app'
