@@ -21,9 +21,9 @@ const Dashboard = TabNavigator(
     tabBarPosition: "bottom",
     tabBarOptions: {
       style: {
-        backgroundColor: "#236072"
+        backgroundColor: "white"
       },
-      activeTintColor: "white",
+      activeTintColor: "black",
       showIcon: true,
       showLabel: false
     }

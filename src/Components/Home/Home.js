@@ -20,7 +20,7 @@ class Home extends Component {
   render() {
     return (
       <View>
-        <StatusBar backgroundColor="#236072" barStyle="light-content" hidden={false} />
+        <StatusBar barStyle="light-content" hidden={false} />
         <View style={{ margin: 20 }}>
           <Text>Enter your Name:</Text>
           <TextInput placeholder={"Your Name"} onChangeText={(text) => this.setState({ name: text })}/>

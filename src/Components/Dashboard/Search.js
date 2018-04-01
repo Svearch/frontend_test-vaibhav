@@ -9,14 +9,15 @@ class Search extends Component {
   };
   static navigationOptions = {
     header: null,
-    tabBarIcon: ({ tintColor }) => (
-      <Image source={require("../../Assets/search.png")} style={[styles.icon, { tintColor: tintColor }]} />
-    )
+    tabBarIcon: ({ tintColor }) => <Image source={require("../../Assets/search.png")} style={[styles.icon]} />
   };
   render() {
     return (
       <View>
-        <View style={styles.progressBar} />
+        <View style={{margin: 15}}>
+          <View style={styles.progressBar} />
+          <View style={styles.filledBar} />
+        </View>
         <View style={{ marginTop: 150, marginLeft: 20, marginRight: 20 }}>
           <TouchableOpacity style={styles.logoContainer} disabled={true}>
             <Image source={require("../../Assets/logo.png")} style={styles.logo} />
@@ -59,15 +60,23 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 10,
     elevation: 5,
-    backgroundColor: "#DBE3E5",
+    backgroundColor: "white",
     justifyContent: "center"
   },
   progressBar: {
     marginTop: 10,
-    alignSelf: "center",
-    height: 2,
-    width: "85%",
-    backgroundColor: "grey"
+    height: 3,
+    borderRadius: 5,
+    backgroundColor: "grey",
+    overflow: "hidden"
+  },
+  filledBar: {
+    marginTop: 10,
+    position: "absolute",
+    height: 3,
+    borderRadius: 5,
+    width: "25%",
+    backgroundColor: "black"
   }
 });
 

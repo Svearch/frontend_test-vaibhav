@@ -5,7 +5,7 @@ class News extends Component {
   static navigationOptions = {
     header: null,
     tabBarIcon: ({ tintColor }) => (
-      <Image source={require("../../Assets/home.png")} style={[styles.icon, {tintColor: tintColor}]} />
+      <Image source={require("../../Assets/home.png")} style={[styles.icon]} />
     )
   };
   render() {
